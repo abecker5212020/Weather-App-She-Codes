@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/62e95957dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="SRC/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weatherapp</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="enter">
+        <input id="search-city" type="text" placeholder="enter a city" />
+        <input type="submit" value="search" />
+        <input id="current-location" type="button" value="current location" />
+      </form>
+
+      <h1 id="city">Astoria</h1>
+
+      <h2 class="CurrentDate"></h2>
+
+      <div class="row">
+        <div class="col todays-icon">
+          <img src="image/clear-day.svg" width="400px" />
+        </div>
+
+        <div class="col todays-weather">
+          <span><strong>Current Temperature: </strong></span>
+          <div>
+            <span id="temperature"></span><a href="#" id="celcius">°C</a>|<a
+              href="#"
+              id="farenheit"
+            >
+              /°F</a
+            >
+          </div>
+          <br />
+          <img src="image/sunrise.svg" width="50px" /><strong>Sunrise:</strong>
+          <span id="sunrise"> </span>
+
+          <br />
+          <img src="image/sunset.svg" width="50px" />
+          <strong>Sunset:</strong>
+          <span id="sunset"> </span>
+
+          <br />
+          <img src="image/raindrop.svg" width="50px" /><strong
+            >Precipitation:</strong
+          >
+          <span id="precipitation"> </span>
+          <br />
+          <img src="image/wind.svg" width="50px" />
+          <strong>Wind:</strong>
+          <span id="wind">17mph</span>
+          <br />
+          <img src="image/humidity.svg" width="50px" />
+          <strong>Humidity:</strong>
+          <span id="humidity">91%</span>
+          <br />
+          <img src="image/dust-wind.svg" width="50px" />
+          <strong>AQI:</strong>
+          <span id="aqi">26 Good</span>
+        </div>
+      </div>
+
+      <br />
+      <div class="extended-container">
+        <h3>Extended Forecast</h3>
+        <br />
+        <div class="row">
+          <div class="col col-thurs">Thursday</div>
+          <div class="col col-fri">Friday</div>
+          <div class="col col-sat">Saturday</div>
+          <div class="col col-sun">Sunday</div>
+          <div class="col col-mon">Monday</div>
+        </div>
+        <div class="row">
+          <div class="col col-thurs">
+            <img src="image/clear-day.svg" width="100px" />
+          </div>
+          <div class="col col-fri">
+            <img src="image/partly-cloudy-day.svg" width="100px" />
+          </div>
+          <div class="col col-sat">
+            <img src="image/overcast-day.svg" width="100px" />
+          </div>
+          <div class="col col-sun">
+            <img src="image/rain.svg" width="100px" />
+          </div>
+          <div class="col col-mon">
+            <img src="image/thunderstorms-rain.svg" width="100px" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-thurs"><strong>51°F/</strong> 49°F</div>
+          <div class="col col-fri"><strong>61°F/</strong> 45°F</div>
+          <div class="col col-sat"><strong>53°F/</strong> 42°F</div>
+          <div class="col col-sun"><strong>52°F/</strong> 41°F</div>
+          <div class="col col-mon"><strong>60°F/</strong> 47°F</div>
+        </div>
+      </div>
+    </div>
+    <script src="SRC/index.js"></script>
+  </body>
+</html>

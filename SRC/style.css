@@ -1,0 +1,47 @@
+h1,
+h2,
+h3 {
+  font-family: "Libre Baskerville", serif;
+  color: #27296db6;
+}
+h1 {
+  font-size: 54px;
+}
+h2 {
+  font-size: 34px;
+  padding: 5px;
+}
+form {
+  text-align: center;
+  padding: 50px;
+}
+
+.todays-weather {
+  font-family: "Libre Baskerville", serif;
+  color: #5e63b6;
+  position: relative;
+  right: 20px;
+  font-size: 24px;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.extended-container {
+  font-family: "Libre Baskerville", serif;
+  color: #5e63b6;
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 30px;
+  opacity: 0.8;
+  border: 2px solid white;
+  max-width: 1500px;
+  border-radius: 100px;
+  background: radial-gradient(
+    circle at 7.4% 45.1%,
+    rgb(236, 206, 251) 0%,
+    rgb(205, 237, 246) 45.1%,
+    rgb(227, 251, 252) 78.4%,
+    rgb(230, 247, 235) 90%
+  );
+  text-align: center;
+}
